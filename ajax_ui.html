@@ -1,0 +1,120 @@
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.css"/>
+<link rel="stylesheet" type="text/css" href="css/ajext.css"/>
+
+
+<script src="jquery-1.10.2.js"></script>
+<script src="jquery-ui.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="URI.js"></script>
+
+<script src="ajax_ui.js"></script>
+
+</head>
+<body>
+<div id="top-panel">
+
+<form class="form-inline" role="form">
+  <button id="btnClear" type="submit" class="btn btn-danger">Clear</button>
+  <div class="form-group">
+    <input type="text" class="form-control" id="txtFlt" placeholder="Enter filter">
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" class="form-control" id="chkDoc" checked> Doc
+    </label>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"  id="chkXhr" checked> Xhr
+    </label>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"  id="chkJs" > Js
+    </label>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"  id="chkCss" > Css
+    </label>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"  id="chkImg" > Img
+    </label>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"  id="chkOther" checked> Other
+    </label>
+  </div>  
+
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"  id="chkGet" checked> GET
+    </label>
+  </div>  
+  
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"  id="chkPost" checked> POST
+    </label>
+  </div>  
+
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"  id="chkHttpOther" checked> OTHER
+    </label>
+  </div>  
+	
+	
+  </div>  
+  
+  
+</form>
+
+</div>
+
+<div id="list-panel">
+<table class="table table-condensed">
+<thead>
+<th>Type</th>
+<th>Mtd</th>
+<th>Url</th>
+</thead>
+<tbody id="requests">
+</tbody>
+</table>
+</div>
+
+<div id="code-panel">
+<div>
+<button id="btnRun" type="submit" class="btn btn-success">Run</button>
+<span id="runmsg"></span>
+</div>
+
+<textarea id="code">
+// Select request
+$.get();
+
+</textarea>
+
+<textarea id="response">
+
+</textarea>
+
+<pre id="raw">
+
+</pre>
+
+
+
+</div>
+
+
+</body>
+</html>
